@@ -1,16 +1,15 @@
 import React from 'react'
+import { ChakraProvider } from '@chakra-ui/react'
+import '@fontsource/ubuntu-mono'
+import Cover from './Components/Common/Cover'
 
+import theme from './theme'
 function App() {
-  React.useEffect(() => {
-    const getData = async () => {
-      const res = await fetch('/api/endpoint') // * <-- replace with your endpoint
-      const data = await res.json()
-      console.log(data)
-    }
-    getData()
-  })
-
-  return <h1>Hello World</h1>
+  return (
+    <ChakraProvider theme={theme}>
+      <Cover />
+    </ChakraProvider>
+  )
 }
 
 export default App

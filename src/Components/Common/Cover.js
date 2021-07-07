@@ -3,8 +3,6 @@ import React from 'react'
 
 import {
   Box,
-  Flex,
-  Heading,
   Text
 } from '@chakra-ui/react'
 
@@ -22,7 +20,7 @@ function Cover() {
 
   React.useEffect(() => {
     return function cleanup() {
-      document.removeEventListener('keydown', initialise);
+      document.removeEventListener('keydown', initialise)
     }
   }, [])
 

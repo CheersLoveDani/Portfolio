@@ -52,7 +52,7 @@ function Cover() {
             </Text>
           </TypeWriter>
           :
-          <h1>lmao bye</h1>
+          <Text fontSize={40}>This site is still a work in progress! Please check back soon for some great projects!</Text>
       }
 
     </Box>

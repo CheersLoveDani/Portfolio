@@ -22,8 +22,8 @@ const theme = extendTheme({
   config,
   styles,
   fonts: {
-    heading: 'Ubuntu Mono',
-    body: 'Ubuntu Mono',
+    heading: 'Arial',
+    body: 'Arial',
   },
 })
 

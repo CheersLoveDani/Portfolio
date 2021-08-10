@@ -1,6 +1,6 @@
 function Future() {
   return (
-    <h1>Future</h1>
+    <h1>Coming soon to a portfolio site near you!</h1>
   )
 }
 

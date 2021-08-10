@@ -1,6 +1,6 @@
 function Contacts() {
   return (
-    <h1>Contacts</h1>
+    <h1>Coming soon to a portfolio site near you!</h1>
   )
 }
 

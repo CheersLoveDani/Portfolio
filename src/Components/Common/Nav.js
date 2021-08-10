@@ -16,7 +16,7 @@ function Nav() {
       justify="space-between"
       wrap="wrap"
       padding={4}
-      bg="#003838"
+      bg="#4c5154"
       color="white"
     >
 
@@ -26,10 +26,10 @@ function Nav() {
       </Heading>
 
       <ButtonGroup isAttached>
-        <Button>
+        <Button variant='ghost' p={1}>
           <Link to='/'>
             <Text
-              padding={4}
+              padding={{ base: 0, lg: 4 }}
             >
               Projects
             </Text>
@@ -37,30 +37,30 @@ function Nav() {
         </Button>
 
 
-        <Button>
+        <Button variant='ghost' p={1}>
           <Link to='/contact'>
             <Text
-              padding={4}
+              padding={{ base: 0, lg: 4 }}
             >
               Contact
             </Text>
           </Link>
         </Button>
 
-        <Button>
+        <Button variant='ghost' p={1}>
           <Link to='/about'>
             <Text
-              padding={4}
+              padding={{ base: 0, lg: 4 }}
             >
               About
             </Text>
           </Link>
         </Button>
 
-        <Button>
+        <Button variant='ghost' p={1}>
           <Link to='/future'>
             <Text
-              padding={4}
+              padding={{ base: 0, lg: 4 }}
             >
               Future
             </Text>

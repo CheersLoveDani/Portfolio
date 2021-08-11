@@ -8,7 +8,10 @@ import {
   useMediaQuery
 } from '@chakra-ui/react'
 
-import { FaGithub, FaPlayCircle } from 'react-icons/fa'
+import {
+  FaGithub,
+  FaPlayCircle
+} from 'react-icons/fa'
 
 function ProjectTemplate({ img, title, text, isRight, playLink, gitHub }) {
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import { ChakraProvider } from '@chakra-ui/react'
 import '@fontsource/ubuntu-mono'
-// import '@fontsource/alegreya-sans-sc'
+import '@fontsource/alegreya-sans-sc'
 import Nav from './Components/Common/Nav'
 import theme from './theme'
 import Main from './Components/Common/Main'

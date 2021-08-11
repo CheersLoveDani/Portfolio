@@ -21,7 +21,9 @@ function Nav() {
     >
 
       <Heading
-        flex={1}>
+        flex={1}
+        fontFamily='Alegreya Sans SC'
+      >
         Daniel Fullerton
       </Heading>
 
@@ -57,7 +59,7 @@ function Nav() {
           </Link>
         </Button>
 
-        <Button variant='ghost' p={1}>
+        {/* <Button variant='ghost' p={1}>
           <Link to='/future'>
             <Text
               padding={{ base: 0, lg: 4 }}
@@ -65,7 +67,7 @@ function Nav() {
               Future
             </Text>
           </Link>
-        </Button>
+        </Button> */}
       </ButtonGroup>
 
 

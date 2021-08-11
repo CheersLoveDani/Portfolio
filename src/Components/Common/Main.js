@@ -7,7 +7,7 @@ import ProjectTemplate from './ProjectTemplate'
 
 function Main() {
   return (
-    <Box margin={10}>
+    <Box m={{ base: 4, lg: 10 }}>
       <Heading fontSize={{ base: '5vw', lg: '3vw' }} mb={5}>Projects</Heading>
       <ProjectTemplate
         img='https://res.cloudinary.com/sirdancloud/image/upload/v1628526857/Portfolio/2048_Portfolio_Picture_nktxxh.png'

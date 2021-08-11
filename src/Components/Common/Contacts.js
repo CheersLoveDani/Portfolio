@@ -21,7 +21,7 @@ function Contacts() {
   return (
     <Box m={{ base: 4, lg: 10 }}>
       <Heading fontSize={{ base: '5vw', lg: '3vw' }}>
-        My Info:
+        My Info
       </Heading>
       <Box m={{ base: 4, lg: 5 }}>
         <Text mb={2} fontSize={{ base: '4vw', lg: '2vw' }}>

@@ -38,6 +38,15 @@ function Nav() {
           </Link>
         </Button>
 
+        <Button variant='ghost' p={1}>
+          <Link to='/about'>
+            <Text
+              padding={{ base: 0, lg: 4 }}
+            >
+              About
+            </Text>
+          </Link>
+        </Button>
 
         <Button variant='ghost' p={1}>
           <Link to='/contact'>
@@ -45,16 +54,6 @@ function Nav() {
               padding={{ base: 0, lg: 4 }}
             >
               Contact
-            </Text>
-          </Link>
-        </Button>
-
-        <Button variant='ghost' p={1}>
-          <Link to='/about'>
-            <Text
-              padding={{ base: 0, lg: 4 }}
-            >
-              About
             </Text>
           </Link>
         </Button>

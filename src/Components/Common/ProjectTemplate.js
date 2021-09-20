@@ -22,7 +22,7 @@ function ProjectTemplate({ img, title, text, isRight, playLink, gitHub }) {
       {
         isRight && !isMobile ?
           <>
-            <Box border='1px' p={5}>
+            <Box p={5}>
               <SimpleGrid columns={{ base: 1, lg: 2 }}>
                 <Box>
                   <Text
@@ -56,7 +56,7 @@ function ProjectTemplate({ img, title, text, isRight, playLink, gitHub }) {
           :
           <>
 
-            <Box border='1px' p={5}>
+            <Box p={5}>
               <SimpleGrid columns={{ base: 1, lg: 2 }}>
                 <Image src={img} width={{ base: '100%', lg: '96%' }} />
                 <Box>

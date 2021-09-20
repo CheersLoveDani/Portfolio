@@ -33,17 +33,17 @@ function Nav() {
             <Text
               padding={{ base: 0, lg: 4 }}
             >
-              Projects
+              About
             </Text>
           </Link>
         </Button>
 
         <Button variant='ghost' p={1}>
-          <Link to='/about'>
+          <Link to='/projects'>
             <Text
               padding={{ base: 0, lg: 4 }}
             >
-              About
+              Projects
             </Text>
           </Link>
         </Button>

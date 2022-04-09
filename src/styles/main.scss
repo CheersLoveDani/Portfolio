@@ -1,19 +1,5 @@
-.blinking-cursor {
-  font-weight: 100;
-  font-size: 30px;
-  color: #2E3D48;
-  -webkit-animation: 1s blink step-end infinite;
-  -moz-animation: 1s blink step-end infinite;
-  -ms-animation: 1s blink step-end infinite;
-  -o-animation: 1s blink step-end infinite;
-  animation: 1s blink step-end infinite;
-}
+@import './01-Variables/Colors.scss';
+@import './01-Variables/Fonts.scss';
 
-@keyframes blink {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: rgb(255, 255, 255);
-  }
-}
+
+@import './Custom/HomePage.scss';

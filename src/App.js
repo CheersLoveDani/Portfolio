@@ -9,18 +9,23 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Contacts from './Components/Portfolio/Contacts'
 import About from './Components/Portfolio/About'
 import Future from './Components/Portfolio/Future'
+import Home from './Components/Main/Home'
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
       <BrowserRouter>
-        <Nav />
+
         <Switch>
-          <Route exact path='/' component={About} />
-          <Route path='/portfolio/about' component={About} />
-          <Route path='/portfolio/contact' component={Contacts} />
-          <Route path='/portfolio/projects' component={Main} />
-          <Route path='/portfolio/future' component={Future} />
+          <Route exact path='/' component={Home} />
+          <Route path='/portfolio/' >
+            <Nav />
+            <Route index component={About} />
+            <Route path='/portfolio/about' component={About} />
+            <Route path='/portfolio/contact' component={Contacts} />
+            <Route path='/portfolio/projects' component={Main} />
+            <Route path='/portfolio/future' component={Future} />
+          </Route>
         </Switch>
       </BrowserRouter>
     </ChakraProvider>

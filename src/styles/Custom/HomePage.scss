@@ -1,0 +1,149 @@
+
+$primary-color: $color1;
+$secondary-color: $color2;
+
+//Background
+$blob-1-size-a: 150vmin;
+$blob-1-size-b: 200vmin;
+
+$blob-2-size: 120vmin;
+
+$blob-3-size: 80vmin;
+
+// Menu
+$num-elements: 5;
+$angle: 360/$num-elements;
+
+$container-radius: 50vmin;
+$circle-size: $container-radius/($num-elements/2);
+
+$rot: 0;
+
+$rotate-speed: 120s;
+
+
+.home-page{
+  height: 100vh;
+  width: 100vw;
+  background: $color1;
+  overflow: hidden;
+
+  .background-blob{
+    position: absolute;
+    background: $color2;
+  }
+  
+  .blob-1{
+    width: $blob-1-size-a;
+    height: $blob-1-size-b;
+    border-radius: 50%;
+    animation: blob-1 60s alternate infinite ease-in-out;
+    @keyframes blob-1 {
+      from{
+        transform: translate(100vh, 30vw);
+      } 
+      to {
+        transform: translate(-80vh, 30vw);
+      }
+    }
+
+  }
+  
+  .blob-2{
+    width: $blob-2-size;
+    height: $blob-2-size;
+    border-radius: 50%;
+    animation: blob-2 40s alternate infinite ease-in-out;
+    @keyframes blob-2 {
+      from{
+        transform: translate(100vh, -30vw);
+      } 
+      to {
+        transform: translate(0vh, 10vw);
+      }
+    }
+
+  }
+  
+  .blob-3{
+    width: $blob-3-size;
+    height: $blob-3-size;
+    border-radius: 50%;
+    background: $color2;
+    animation: blob-3 30s alternate infinite ease-in-out;
+    @keyframes blob-3 {
+      from{
+        transform: translate(20vh, -50vw);
+      } 
+      to {
+        transform: translate(0vh, 50vw);
+      }
+    }
+
+  }
+
+  .circle-container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: $container-radius;
+    height: $container-radius;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotate $rotate-speed infinite linear;
+    @keyframes rotate{
+      from{
+        transform: translate(-50%, -50%) rotate(0deg);
+      } 
+      to {
+        transform: translate(-50%, -50%) rotate(360deg);
+      }
+    }
+
+    
+
+    .container-child{
+      width: $circle-size;
+      height: $circle-size;
+      position: absolute;
+      border-radius: 50%;
+      left: 50%;
+      top: 50%;
+      margin: -($circle-size/2);
+      // transform: translate(-50%, -50%);
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(12px);
+
+      .circle-inner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        animation: antirotate $rotate-speed infinite linear;
+
+        p{
+          color: white;
+          font-size: 2em;
+        }
+      }
+      
+
+      @keyframes antirotate{
+        from{
+          transform: rotate(0deg);
+        } 
+        to {
+          transform: rotate(-360deg);
+        }
+      }
+    }
+  }
+  @for $i from 1 through $num-elements {
+    .container-child:nth-child(#{$i}){
+      transform: rotate($rot * 1deg) translate(($container-radius/2)) rotate($rot * -1deg);
+    }
+    $rot: $rot + $angle
+  }
+}

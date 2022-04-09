@@ -28,8 +28,19 @@ function Nav() {
       </Heading>
 
       <ButtonGroup isAttached>
+
         <Button variant='ghost' p={1}>
           <Link to='/'>
+            <Text
+              padding={{ base: 0, lg: 4 }}
+            >
+              Home
+            </Text>
+          </Link>
+        </Button>
+
+        <Button variant='ghost' p={1}>
+          <Link to='/portfolio/about'>
             <Text
               padding={{ base: 0, lg: 4 }}
             >
